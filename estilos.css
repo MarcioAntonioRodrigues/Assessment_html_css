@@ -1,0 +1,60 @@
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: midnightblue;
+	background-image: url("arquivos/img/background.png");
+}
+#container
+{
+	margin: auto;
+	height: 940px;;
+}
+
+header h1
+{
+	display: none;
+}
+
+header h1 a
+{
+	height: 134px;
+	width: 130px;
+	display: block;
+	text-indent: -9999px;
+	background-image: url("arquivos/img/logo_GK.png");
+	margin-left: 40px;
+}
+
+h2
+{
+	border-bottom: 2px solid black;
+	margin-top: 30px;
+	font-size: 1.2em;
+}
+
+figure
+{
+	background-color: #f2eded;
+	border: 1px solid black;
+	text-align: center;
+	padding: 15px;
+	margin: 30px;
+}
+
+figure figcaption
+{
+	margin-top: 10px;
+}
+
+figure #centro-distribuicao
+{
+	align-items: center;
+	width: 550px;
+}
+
+p
+{
+	margin-top: 15px;
+	padding: 0 45px;
+	line-height: 1.5em;
+}
