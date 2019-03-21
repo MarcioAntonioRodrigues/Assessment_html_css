@@ -192,7 +192,7 @@ header
 	font-weight: bolder;
 	text-transform: uppercase;
 	margin-right: 10px;
-	height: 230px;
+	width: 230px;
 	float: left;
 }
 
@@ -237,6 +237,11 @@ header
 	background: white;
 	margin: 1px;
 	padding: 5px 10px;
+	color: gray;
+}
+.menu-departamentos ul li ul li::before
+{
+	content: "- ";
 }
 
 .menu-departamentos a
@@ -249,7 +254,38 @@ header
 {
 	display: none;
 }
-.menu-departamentos li:first-child:hover
+.menu-departamentos li:hover ul
 {
 	display: block;
+}
+
+section.painel
+{
+	margin: 10px 0;
+	padding: 10px;
+	width: 445px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 0 gray;
+}
+
+section.painel h2
+{
+	text-shadow: rgba(255,255,255,.8);
+}
+
+section.painel h2::before
+{
+	content: '\2756';
+	padding-right: 5px;
+	opacity: 0.4;
+}
+
+section.painel.novidades
+{
+	float: left;
+}
+
+section.painel.mais-vendidos
+{
+	float: right;
 }
