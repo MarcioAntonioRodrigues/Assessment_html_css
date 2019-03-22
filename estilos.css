@@ -235,13 +235,25 @@ header
 .menu-departamentos li
 {
 	background: white;
-	margin: 1px;
+	margin-bottom: 1px;
 	padding: 5px 10px;
 	color: gray;
 }
+
 .menu-departamentos ul li ul li::before
 {
 	content: "- ";
+}
+
+.menu-departamentos ul ul li
+{
+	background-color: #dcdcdc;
+}
+
+.menu-departamentos ul li li a::before
+{
+	content: '\272A';
+	padding-right: 3px;
 }
 
 .menu-departamentos a
@@ -288,4 +300,45 @@ section.painel.novidades
 section.painel.mais-vendidos
 {
 	float: right;
+	background: #dcdcf5;
+}
+
+section.painel ol li
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 140px;
+	margin: 2px;
+	padding: 10px;
+	transition: .7s ease-in;
+}
+
+section.painel ol li:hover
+{
+	box-shadow: 0 0 2px 0 gray;
+	background: rgba(255,255,255,.8);
+	transform: scale(1.2) rotate(-5deg);
+	transition: 07 ease-in;
+}
+
+section.painel h2
+{
+	font-size: 1.2em;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+section.painel a
+{
+	color: #333;
+	text-align: center;
+	text-decoration: none;
+}
+
+section.painel figure,
+section.painel figcaption
+{
+	margin: 0;
+	padding: 0;
 }
