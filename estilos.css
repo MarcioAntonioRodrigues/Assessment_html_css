@@ -240,11 +240,6 @@ header
 	color: gray;
 }
 
-.menu-departamentos ul li ul li::before
-{
-	content: "- ";
-}
-
 .menu-departamentos ul ul li
 {
 	background-color: #dcdcdc;
@@ -271,6 +266,12 @@ header
 	display: block;
 }
 
+div.caixa
+{
+	margin: 0 auto;
+	width: 940px;
+}
+
 section.painel
 {
 	margin: 10px 0;
@@ -295,12 +296,15 @@ section.painel h2::before
 section.painel.novidades
 {
 	float: left;
+	background: #f5dcdc;
+	box-shadow: inset -1px -1px 10px 0px #000;
 }
 
 section.painel.mais-vendidos
 {
 	float: right;
 	background: #dcdcf5;
+	box-shadow: inset -1px -1px 10px 0px #000;
 }
 
 section.painel ol li
@@ -309,8 +313,8 @@ section.painel ol li
 	vertical-align: top;
 	width: 140px;
 	margin: 2px;
-	padding: 10px;
-	transition: .7s ease-in;
+	padding-bottom: 10px;
+	transition: .7s ease-out;
 }
 
 section.painel ol li:hover
@@ -318,7 +322,7 @@ section.painel ol li:hover
 	box-shadow: 0 0 2px 0 gray;
 	background: rgba(255,255,255,.8);
 	transform: scale(1.2) rotate(-5deg);
-	transition: 07 ease-in;
+	transition: .7 ease-in;
 }
 
 section.painel h2
@@ -341,4 +345,9 @@ section.painel figcaption
 {
 	margin: 0;
 	padding: 0;
+}
+
+section.painel figure img
+{
+	width: 100%;
 }
