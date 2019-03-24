@@ -2,12 +2,12 @@ body
 {
 	font-family: Arial, Helvetica, sans-serif;
 	color: midnightblue;
-	background-image: url("arquivos/img/background.png");
+	background-image: url(arquivos/img/background.png);
 }
 #container
 {
 	margin: auto;
-	height: 940px;;
+	width: 940px;
 }
 
 header h1
@@ -30,6 +30,7 @@ h2
 	border-bottom: 2px solid black;
 	margin-top: 30px;
 	font-size: 1.2em;
+	padding-left: 10px;
 }
 
 figure
@@ -62,7 +63,7 @@ figure#familia-teles
 #diferenciais ul
 {
 	margin-top: 15px;
-	margin-right: 60px;
+	margin-left: 60px;
 }
 
 p
@@ -85,10 +86,13 @@ a:hover
 
 footer
 {
-	color: #ccc;
-	margin: 30px 0;
-	background-image: url(arquivos/img/fundo-rodape.png);
-	clear: both;
+    color: #ccc;
+    margin: 30px 0 0;
+    background-image: url(arquivos/img/fundo-rodape.png);
+    clear: both;
+    position: absolute;
+    width: 940px;
+    bottom: 0;
 }
 
 footer img
@@ -128,14 +132,14 @@ footer ul li
 
 .social a[href*="http://www.twitter.com/gkfashion"]
 {
-	background-image: url(arquivos/img/sociais.png);
+	background-image: url("arquivos/img/sociais.png");
 	background-position-x: 80px;
 	background-position-y: 0px;
 	width: 40px;
 }
 .social a[href*="http://plus.google.com/gkfashion"]
 {
-	background-image: url(arquivos/img/sociais.png);
+	background-image: url("arquivos/img/sociais.png");
 	background-position-x: 120px;
 	background-position-y: 0px;
 	width: 40px;
@@ -169,7 +173,7 @@ header
 .menu-principal
 {
 	position: absolute;
-	bottom: 0;
+	bottom: 20px;
 	right: 0;
 }
 
@@ -208,6 +212,18 @@ header
 .menu-departamentos h2
 {
 	margin: 10px;
+}
+
+.busca form
+{
+	position: relative;
+}
+
+.busca form img
+{
+	position: absolute;
+	top: 5px;
+	right: 0;
 }
 
 .busca
@@ -269,7 +285,6 @@ header
 div.caixa
 {
 	margin: 0 auto;
-	width: 940px;
 }
 
 section.painel
@@ -323,6 +338,7 @@ section.painel ol li:hover
 	background: rgba(255,255,255,.8);
 	transform: scale(1.2) rotate(-5deg);
 	transition: .7 ease-in;
+	padding-bottom:0; 
 }
 
 section.painel h2
@@ -350,4 +366,137 @@ section.painel figcaption
 section.painel figure img
 {
 	width: 100%;
+}
+
+label,
+input,
+select,
+textarea,
+button
+{
+	display: block;
+	margin: 10px;
+	width: 200px;
+}
+
+section#contato form
+{
+	margin: auto;
+	width: 200px;
+}
+
+footer.footer-index
+{
+	position: inherit;
+}
+
+nav ul li a:hover
+{
+	color: violet;
+}
+
+/* cartão fidelidade */
+
+section#fidelidade table
+{
+	margin: 30px;
+	border: 1px solid;
+	padding: 10px;
+    display: block;
+}
+
+section#fidelidade table tr td:first-child
+{
+	text-transform: uppercase;
+}
+
+section#fidelidade table tr td
+{
+	border: 1px solid;
+}
+
+section#fidelidade table tr td
+{
+	padding: 5px;
+}
+
+/* CSS RESPONSIVO */
+
+@media screen 
+and (max-width: 320px),
+(max-width: 480px)
+{
+	body
+	{
+		font-size: 12px;
+	}
+
+	#container,
+	.caixa-destaque img:nth-child(3),
+	section.painel,
+	footer,
+	figure#centro-distribuicao,
+	figure#centro-distribuicao img,
+	figure#familia-teles img
+	{
+		width: 100%;
+	}	
+
+	header img
+	{
+		width: 20%;
+	}
+
+	.menu-principal
+	{
+		position: relative;
+		bottom: 10px;
+		right: 0;
+		margin-top: 20px;
+		padding: 10px;
+	}
+
+	section.painel
+	{
+		padding: 0;
+		text-align: center;
+	}
+
+	section#sobre figure,
+	section#historia figure
+	{
+		width: 80%;
+	}
+
+	.menu-principal ul
+	{
+		text-align: center;
+	}
+
+	.menu-principal ul li 
+	{
+		display: inline-block;
+		margin: 5px;
+	}
+
+	.busca,
+	.menu-departamentos
+	{
+		margin: 10px auto;
+		float: none;
+		display: table;
+	}
+
+	footer p
+	{
+		top: 50%;
+		position: absolute;
+		left: 30%;
+		white-space: nowrap;
+	}
+
+	.social
+	{
+		right: 40px;
+	}
 }
