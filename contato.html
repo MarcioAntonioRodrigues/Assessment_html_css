@@ -16,23 +16,23 @@
 <body>
 	<div id="container">
 		<header></header>
-		<main role="main">
+		<main>
 			<section id="contato">
 				<h2>Entre em contato:</h2>
-				<form action="">
+				<form action="sobre.html">
 					<label for="nome">Nome</label>
-					<input name="nome" autofocus="true" pattern="[a-zA-Z]+" type="text" required>
+					<input id="nome" autofocus pattern="[a-zA-Z]+" type="text" required>
 					<label for="email">E-mail</label>
-					<input name="email" type="email" required>
-					<label for="movito">Motivo</label>
-					<select name="motivo" id="" required>
+					<input id="email" type="email" required>
+					<label for="motivo">Motivo</label>
+					<select id="motivo" required size="4">
 						<option value="sugestao">Sugestão</option>
 						<option value="critica">Crítica</option>
 						<option value="elogio">Elogio</option>
 						<option value="outros">Outros</option>
 					</select>
 					<label for="coments">Comentários</label>
-					<textarea name="coments" id="" cols="30" rows="10" required></textarea>
+					<textarea id="coments" cols="30" rows="10" required></textarea>
 					<button value="Enviar">Enviar</button>
 				</form>
 			</section>
