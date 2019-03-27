@@ -376,10 +376,10 @@ section.painel figure img
 	width: 100%;
 }
 
-label,
-input,
-select,
-textarea,
+section#contato label,
+section#contato input,
+section#contato select,
+section#contato textarea,
 button
 {
 	display: block;
