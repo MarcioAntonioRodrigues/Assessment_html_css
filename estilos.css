@@ -301,7 +301,7 @@ section.painel
 	padding: 10px;
 	width: 445px;
 	border-radius: 5px;
-	box-shadow: 0 0 10px 0 gray;
+	box-shadow: 0 0 10px 0 grey, inset -1px -1px 10px 0px grey;
 }
 
 section.painel h2
@@ -320,14 +320,12 @@ section.painel.novidades
 {
 	float: left;
 	background: #f5dcdc;
-	box-shadow: inset -1px -1px 10px 0px #000;
 }
 
 section.painel.mais-vendidos
 {
 	float: right;
 	background: #dcdcf5;
-	box-shadow: inset -1px -1px 10px 0px #000;
 }
 
 section.painel ol li
