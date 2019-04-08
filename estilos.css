@@ -440,6 +440,16 @@ and (max-width: 480px)
 		width: 95%;
 	}
 
+	figure#familia-teles
+	{
+		float: none;
+	}
+
+	section#historia p
+	{
+		clear: both;
+	}
+
 	.busca,
 	.menu-departamentos
 	{
