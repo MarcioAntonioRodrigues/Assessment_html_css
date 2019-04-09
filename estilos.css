@@ -546,6 +546,11 @@ and (max-width: 320px)
 		margin-left: 0;
 	}
 
+	section#contato form
+	{
+		width: 240px;
+	}
+
 	.caixa-destaque img
 	{
 		width: 90%;
